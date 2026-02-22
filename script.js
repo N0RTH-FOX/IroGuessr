@@ -25,8 +25,8 @@ let quest_blue = Math.floor(Math.random()*255)
 let submit_color = "#000000";
 let quest_color = "#"+ 
     quest_red.toString(16).padStart(2,0)+ 
-    quest_blue.toString(16).padStart(2,0)+ 
-    quest_green.toString(16).padStart(2,0);
+    quest_green.toString(16).padStart(2,0)+ 
+    quest_blue.toString(16).padStart(2,0);
 document.querySelector("body").style.setProperty('--quest_color',quest_color);
 
 submit.addEventListener("click", () => {
