@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>IroGuessr</h1>
+            <div id="game">
+                <div id="question"></div>
+                <div id="ranges">
+                    <div id="range_submit">
+                        <input type="range" min="0" max="255" value="0" class="color_range" id="red">
+                        <input type="range" min="0" max="255" value="0" class="color_range" id="green">
+                        <input type="range" min="0" max="255" value="0" class="color_range" id="blue">
+                    </div>
+                    <div id="range_ans">
+                        <input type="range" min="0" max="255" disabled id="red_ans">
+                        <input type="range" min="0" max="255" disabled id="green_ans">
+                        <input type="range" min="0" max="255" disabled id="blue_ans">
+                    </div>
+                </div>
+                <div id="submit_div">
+                    <div class="button" id="submit"></div>
+                </div>
+                <div id="ans_div">
+                    <div id="ans_color"></div>
+                    <div id="result">
+                        <p style="grid-area: a;">Answer</p>
+                        <p style="grid-area: b;">Your Answer</p>
+                        <p style="grid-area: c;" id="ans_color_code">#??????</p>
+                        <p style="grid-area: d;" id="submit_color_code">#??????</p>
+                        <div style="grid-area: e;">
+                            <p style="grid-area: f;" id="r_def"></p>
+                            <p style="grid-area: g;" id="g_def"></p>
+                            <p style="grid-area: h;" id="b_def"></p>
+                            <p style="grid-area: i;" id="point"></p>
+                        </div>
+                    </div>
+                    <div class="button" onclick="location.href='./index.html'" id="retry"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Create by N0RTH_FOX</p>
+        <p>Twitter : <a href="https://x.com/N0RTH_FOX">@N0RTH_FOX</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
