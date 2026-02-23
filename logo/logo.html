@@ -1,0 +1,66 @@
+<!-- f12 -> ctrl+shift+p -> Capture node screenshot -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<div id="back">
+    <div id="logo">
+        <div id="main">
+            <div id="color"></div>
+            <p>IroGuessr</p>
+        </div>
+    </div>
+    <div id="icon">
+        <div></div>
+    </div>
+</div>
+
+<style>
+    body{
+        background: #000;
+    }
+    #logo{
+        height: 50rem;
+        aspect-ratio: 1.91/1;
+        background: #fff;
+    }
+    #main{
+        display: flex;
+        width: min-content;
+        height: max-content;
+        margin: 0 auto;
+    }
+    #color{
+        display: inline-block;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        margin: 20rem 0 20rem 0;
+        height: 10rem;
+        background: conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);
+    }
+    p{
+        max-height: 10rem;
+        margin: 20rem 0;
+        display: inline-block;
+        font-size: 10rem;
+        /* line-height: 50rem; */
+        font-family: "Google Sans Code", monospace;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    #icon{
+        aspect-ratio: 1/1;
+        height: 10rem;
+        margin: 1rem;
+        padding: 1rem;
+        background: #fff;
+    }
+    #icon>div{
+        border-radius: 100%;
+        background: conic-gradient(#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);
+        aspect-ratio: 1/1;
+        height: 10rem;
+    }
+</style>
