@@ -5,13 +5,13 @@ body{
 
     margin: 0;
     padding: 0;
-    background-color: var(--quest_color);
-    font-size: 2rem;
+    background-color: color-mix(in srgb, var(--quest_color) 60%, #000);
 
     font-family: "Google Sans Code", monospace;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    font-size: 1.5rem;
 }
 main{
     background-color: var(--main_back);
@@ -25,7 +25,6 @@ main{
         outline: .5vw dashed var(--quest_color);
         outline-offset: -1vw;
         text-align: center;
-        /* overflow: hidden; */
     }
 }
 h1{
