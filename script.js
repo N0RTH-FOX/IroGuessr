@@ -18,9 +18,9 @@ const blue_ans = document.getElementById("blue_ans");
 const submit_div = document.getElementById("submit_div");
 const ans_div = document.getElementById("ans_div");
 
-let quest_red = Math.floor(Math.random()*255)
-let quest_green = Math.floor(Math.random()*255)
-let quest_blue = Math.floor(Math.random()*255)
+let quest_red = Math.floor(Math.random()*256)
+let quest_green = Math.floor(Math.random()*256)
+let quest_blue = Math.floor(Math.random()*256)
 
 let submit_color = "#000000";
 let quest_color = "#"+ 
